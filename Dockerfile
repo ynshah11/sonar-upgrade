@@ -74,7 +74,7 @@ RUN set -x \
     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip \
     && unzip sonarqube.zip \
     && mv sonarqube-$SONAR_VERSION sonarqube \
-    #&& chown -R sonarqube:sonarqube sonarqube \
+    && chown -R sonarqube:sonarqube sonarqube \
     && rm sonarqube.zip* \
     && rm -rf $SONARQUBE_HOME/bin/*
 
