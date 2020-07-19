@@ -26,7 +26,7 @@ RUN yum install -y unzip
 ENV JAVA_HOME=/usr/local/openjdk-11
 
 
-#RUN groupadd -r sonarqube && useradd -r -g sonarqube sonarqube
+RUN groupadd -r sonarqube && useradd -r -g sonarqube sonarqube
 #RUN groupadd sonar && useradd -c "Sonar System User" -d /opt/sonarqube -g sonar -s /bin/bash sonar
 
 # grab gosu for easy step-down from root
