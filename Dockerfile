@@ -2,7 +2,7 @@
 #Re-building with  RHEL image
 FROM registry.access.redhat.com/ubi8/ubi
 
-ENV SONAR_VERSION=7.9.3 \
+ENV SONAR_VERSION=8.4.1.35646 \
     SONARQUBE_HOME=/opt/sonarqube \
     # Database configuration
     # Defaults to using H2
